@@ -90,6 +90,8 @@ book:
         - quarto-formats.qmd
 lang: es
 
+execute:
+  error: true
 
 format:
   html:
