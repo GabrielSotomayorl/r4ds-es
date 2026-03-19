@@ -6,6 +6,11 @@ book:
   title: "R para la Ciencia de Datos (2e)"
   reader-mode: true
   site-url: https://davidrsch.github.io/r4ds-es/
+  description: |
+    Traducción al español de "R for Data Science" (2ª ed.) de Hadley Wickham,
+    Mine Çetinkaya-Rundel y Garrett Grolemund. Aprende a importar, organizar,
+    transformar, visualizar y comunicar datos con R y el tidyverse.
+  open-graph: true
 
   page-footer:
     left: |
