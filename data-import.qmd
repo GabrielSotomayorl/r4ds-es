@@ -288,10 +288,10 @@ Finalmente, mencionaremos algunas estrategias generales que son útiles si readr
 ### Adivinar tipos
 
 readr usa una heurística para averiguar los tipos de columna.
-Para cada columna, extrae los valores de 1000 filas \[\^data-import-2\] espaciadas uniformemente desde la primera fila hasta la última, ignorando los valores faltantes.
+Para cada columna, extrae los valores de 1000 filas [^data-import-2] espaciadas uniformemente desde la primera fila hasta la última, ignorando los valores faltantes.
 Luego trabaja a través de las siguientes preguntas:
 
-\[\^importación de datos-2\]: puede anular el valor predeterminado de 1000 con el argumento `guess_max`.
+[^data-import-2]: puede anular el valor predeterminado de 1000 con el argumento `guess_max`.
 
 -   ¿Contiene solo `F`, `T`, `FALSE` o `TRUE` (ignorando mayúsculas y minúsculas)? Si es así, es una lógica.
 -   ¿Contiene solo números (por ejemplo, `1`, `-4.5`, `5e6`, `Inf`)? Si es así, es un número.
@@ -521,7 +521,7 @@ Usaremos `tibble()` y `tribble()` más adelante en el libro para construir peque
 
 En este capítulo, ha aprendido a cargar archivos CSV con `read_csv()` y a realizar su propia entrada de datos con `tibble()` y `tribble()`.
 Ha aprendido cómo funcionan los archivos csv, algunos de los problemas que puede encontrar y cómo solucionarlos.
-Llegaremos a la importación de datos varias veces en este libro: @sec-import-spreadsheets desde Excel y Google Sheets, @sec-import-databases le mostrará cómo cargar datos desde bases de datos, @sec-arrow desde archivos parquet, \@ sec-rectangling de JSON y @sec-scraping de sitios web.
+Llegaremos a la importación de datos varias veces en este libro: @sec-import-spreadsheets desde Excel y Google Sheets, @sec-import-databases le mostrará cómo cargar datos desde bases de datos, @sec-arrow desde archivos parquet, @sec-rectangling de JSON y @sec-scraping de sitios web.
 
 Estamos casi al final de esta sección del libro, pero hay un último tema importante que cubrir: cómo obtener ayuda.
 Entonces, en el próximo capítulo, aprenderá algunos buenos lugares para buscar ayuda, cómo crear un reprex para maximizar sus posibilidades de obtener una buena ayuda y algunos consejos generales para mantenerse al día con el mundo de R.

@@ -377,7 +377,7 @@ read_excel("data/bake-sale.xlsx")
 
 ### Salida formateada
 
-El paquete writexl es una solución liviana para escribir una hoja de cálculo de Excel simple, pero si está interesado en funciones adicionales como escribir en hojas dentro de una hoja de cálculo y diseñar, querrá usar el [paquete openxlsx](https://%20ycphs.github.io/openxlsx).
+El paquete writexl es una solución liviana para escribir una hoja de cálculo de Excel simple, pero si está interesado en funciones adicionales como escribir en hojas dentro de una hoja de cálculo y diseñar, querrá usar el [paquete openxlsx](https://ycphs.github.io/openxlsx).
 No entraremos en los detalles del uso de este paquete aquí, pero recomendamos leer <https://ycphs.github.io/openxlsx/articles/Formatting.html> para una discusión extensa sobre la funcionalidad de formato adicional para los datos escritos desde R a Excel con openxlsx.
 
 Tenga en cuenta que este paquete no forma parte de tidyverse, por lo que las funciones y los flujos de trabajo pueden parecerle desconocidos.

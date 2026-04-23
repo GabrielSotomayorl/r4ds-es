@@ -386,7 +386,7 @@ flights |>
 ```
 
 Esto funciona, pero ¿y si también quisiéramos calcular el retraso promedio de los vuelos que llegaron temprano?
-Tendríamos que realizar un paso de filtro por separado y luego descubrir cómo combinar los dos marcos de datos juntos \[\^ lógicos-3\].
+Tendríamos que realizar un paso de filtro por separado y luego descubrir cómo combinar los dos marcos de datos juntos [^logicals-3].
 En su lugar, podría usar `[` para realizar un filtrado en línea: `arr_delay[arr_delay > 0]` generará solo los retrasos de llegada positivos.
 
 Esto lleva a:

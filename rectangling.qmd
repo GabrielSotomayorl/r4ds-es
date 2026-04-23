@@ -302,7 +302,7 @@ Tratar con tipos inconsistentes es un desafío y los detalles dependen de la nat
 tidyr tiene algunas otras funciones útiles de rectángulos que no vamos a cubrir en este libro:
 
 -   `unnest_auto()` elige automáticamente entre `unnest_longer()` y `unnest_wider()` según la estructura de la columna de la lista. Es excelente para una exploración rápida, pero en última instancia es una mala idea porque no lo obliga a comprender cómo están estructurados sus datos y hace que su código sea más difícil de entender.
--   `unnest()` expande filas y columnas. Es útil cuando tiene una columna de lista que contiene una estructura 2d como un marco de datos, que no ve en este libro, pero que puede encontrar si usa el ecosistema [tidymodels](https://www.tmwr.org%20/base-r.html#combining-base-r-models-and-the-tidyverse).
+-   `unnest()` expande filas y columnas. Es útil cuando tiene una columna de lista que contiene una estructura 2d como un marco de datos, que no ve en este libro, pero que puede encontrar si usa el ecosistema [tidymodels](https://www.tmwr.org/base-r.html#combining-base-r-models-and-the-tidyverse).
 
 Es bueno conocer estas funciones, ya que puede encontrarlas al leer el código de otras personas o al abordar desafíos de rectángulos más raros.
 

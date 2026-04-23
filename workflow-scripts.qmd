@@ -135,7 +135,7 @@ run-first.r
 temp.txt
 ```
 
-Hay una variedad de problemas aquí: es difícil encontrar qué archivo ejecutar primero, los nombres de los archivos contienen espacios, hay dos archivos con el mismo nombre pero con mayúsculas diferentes (`finalreport` vs. `FinalReport`\[\^workflow-scripts-1 \]), y algunos nombres no describen su contenido (`run-first` y `temp`).
+Hay una variedad de problemas aquí: es difícil encontrar qué archivo ejecutar primero, los nombres de los archivos contienen espacios, hay dos archivos con el mismo nombre pero con mayúsculas diferentes (`finalreport` vs. `FinalReport`[^workflow-scripts-1]), y algunos nombres no describen su contenido (`run-first` y `temp`).
 
 Aquí hay una mejor manera de nombrar y organizar el mismo conjunto de archivos:
 

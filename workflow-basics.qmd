@@ -33,7 +33,7 @@ x <- 3 * 4
 Tenga en cuenta que el valor de `x` no se imprime, solo se almacena.
 Si desea ver el valor, escriba `x` en la consola.
 
-Puedes **c**combinar múltiples elementos en un vector con `c()`:
+Puedes **c**ombinar múltiples elementos en un vector con `c()`:
 
 ```{r}
 primos <- c(2, 3, 5, 7, 11, 13)
@@ -240,7 +240,7 @@ knitr::include_graphics("screenshots/rstudio-env.png")
     ```
 
 3.  Presione Option + Shift + K / Alt + Shift + K.
-    ¿Qués lo que pasa?
+    ¿Qué es lo que pasa?
     ¿Cómo puedes llegar al mismo lugar usando los menús?
 
 4.  Repasemos un ejercicio de @sec-ggsave.

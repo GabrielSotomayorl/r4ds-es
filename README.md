@@ -16,10 +16,10 @@ También aprenderá a administrar los recursos cognitivos para facilitar los des
 
 Esta traducción de "R para la Ciencia de Datos" es un proyecto personal de [David Díaz Rodríguez](https://github.com/davidrsch) con el objetivo de facilitar el estudio de la Ciencia de Datos con R, tanto al propio traductor como a todas aquellas personas de habla hispana que deseen aprender a realizar Ciencia de Datos con R.
 
-Señalar que esta es una traducción textual del libro por lo que cuando los autores se refieren así mismo en primera persona, serán Hadley Wickham, Mine Çetinkaya-Rundel & Garrett Grolemund y no el traductor.
+Señalar que esta es una traducción textual del libro por lo que cuando los autores se refieren a sí mismos en primera persona, serán Hadley Wickham, Mine Çetinkaya-Rundel & Garrett Grolemund y no el traductor.
 
 La traducción fue realizada usando Google Translate y fueron corregidos algunos errores gramaticales y de coherencia.
-Si detecta algún error relacionado con el contenido de la traducción, siéntase libre de abrir un issue o un pull request en este [repositorio](https://github.com/davidrsch/r4dses).
+Si detecta algún error relacionado con el contenido de la traducción, siéntase libre de abrir un issue o un pull request en este [repositorio](https://github.com/davidrsch/r4ds-es).
 
 ## Sobre otras versiones
 
@@ -104,7 +104,7 @@ This translation of "R for Data Science" is a personal project by [David Díaz R
 Note that this is a verbatim translation of the book so when the authors refer to themselves in the first person, it will be Hadley Wickham, Mine Çetinkaya-Rundel & Garrett Grolemund and not the translator.
 
 The translation was done using Google Translate and some grammar and coherence errors were corrected.
-If you spot any issue related to the translation content, feel free to open an issue or pull request on this [repository](https://github.com/davidrsch/r4dses).
+If you spot any issue related to the translation content, feel free to open an issue or pull request on this [repository](https://github.com/davidrsch/r4ds-es).
 
 ## About other versions
 

@@ -452,7 +452,7 @@ ggplot(mpg, aes(x = hwy, y = fct_reorder(class, hwy, median))) +
     ¿Qué aprendes?
     ¿Cómo interpretas las gráficas?
 
-5.  Cree una visualización de los precios de los diamantes frente a una variable categórica del conjunto de datos `diamoonds` usando `geom_violin()`, luego `geom_histogram()` facetado, luego `geom_freqpoly()` coloreado y luego `geom_density()` coloreado.
+5.  Cree una visualización de los precios de los diamantes frente a una variable categórica del conjunto de datos `diamonds` usando `geom_violin()`, luego `geom_histogram()` facetado, luego `geom_freqpoly()` coloreado y luego `geom_density()` coloreado.
     Compara y contrasta las cuatro gráficas.
     ¿Cuáles son los pros y los contras de cada método para visualizar la distribución de una variable numérica en función de los niveles de una variable categórica?
 
