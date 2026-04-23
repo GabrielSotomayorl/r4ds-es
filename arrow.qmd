@@ -48,7 +48,7 @@ library(duckdb)
 
 ## Obtener los datos
 
-Comenzamos obteniendo un conjunto de datos digno de estas herramientas: un conjunto de datos de préstamo de artículos de las bibliotecas públicas de Seattle, disponible en línea en [data.seattle.gov/Community/Checkouts-by-Title/tmmm-ytt6](https://data.%20seattle.gov/Community/Checkouts-by-Title/tmmm-ytt6).
+Comenzamos obteniendo un conjunto de datos digno de estas herramientas: un conjunto de datos de préstamo de artículos de las bibliotecas públicas de Seattle, disponible en línea en [data.seattle.gov/Community/Checkouts-by-Title/tmmm-ytt6](https://data.seattle.gov/Community/Checkouts-by-Title/tmmm-ytt6).
 Este conjunto de datos contiene 41 389 465 filas que le indican cuántas veces cada libro fue prestado cada mes desde abril de 2005 hasta octubre de 2022.
 
 El siguiente código le dará una copia en caché de los datos.

@@ -51,7 +51,7 @@ table3
 ```
 
 Todas estas son representaciones de los mismos datos subyacentes, pero no son igualmente fáciles de usar.
-Uno de ellos, `table1`, será mucho más fácil de trabajar dentro del tidyverse porque esta ordenada.
+Uno de ellos, `table1`, será mucho más fácil de trabajar dentro del tidyverse porque está ordenada.
 
 Hay tres reglas interrelacionadas que hacen que un conjunto de datos esté ordenado:
 
@@ -348,7 +348,7 @@ Hay dos columnas que ya son variables y son fáciles de interpretar: `country` y
 Les siguen 56 columnas como `sp_m_014`, `ep_m_4554` y `rel_m_3544`.
 Si observa estas columnas durante el tiempo suficiente, notará que hay un patrón.
 Cada nombre de columna se compone de tres piezas separadas por `_`.
-La primera pieza, `sp`/`rel`/`ep`, describe el método utilizado para el diagnóstico, la segunda pieza, `m`/`f` es el `género` (codificado como una variable binaria en este conjunto de datos) , y la tercera pieza, `014`/`1524`/`2534`/`3544`/`4554`/``` 5564/``65 ``` es el rango de `edad` (`014` representa 0-14, por ejemplo).
+La primera pieza, `sp`/`rel`/`ep`, describe el método utilizado para el diagnóstico, la segunda pieza, `m`/`f` es el `género` (codificado como una variable binaria en este conjunto de datos) , y la tercera pieza, `014`/`1524`/`2534`/`3544`/`4554`/`5564`/`65+` es el rango de `edad` (`014` representa 0-14, por ejemplo).
 
 Entonces, en este caso, tenemos seis piezas de información registradas en `who2`: el país y el año (ya columnas); el método de diagnóstico, la categoría de género y la categoría de rango de edad (contenidas en los otros nombres de columna); y el recuento de pacientes en esa categoría (valores de celda).
 Para organizar estas seis piezas de información en seis columnas separadas, usamos `pivot_longer()` con un vector de nombres de columna para `names_to` e instructores para dividir los nombres de las variables originales en partes para `names_sep`, así como un nombre de columna para `values_to`:
@@ -456,7 +456,7 @@ cms_patient_experience |>
 Ninguna de estas columnas hará nombres de variables particularmente buenos: `measure_cd` no sugiere el significado de la variable y `measure_title` es una oración larga que contiene espacios.
 Usaremos `measure_cd` como la fuente para nuestros nuevos nombres de columna por ahora, pero en un análisis real, es posible que desee crear sus propios nombres de variables que sean cortos y significativos.
 
-\``pivot_wider()` tiene la interfaz opuesta a `pivot_longer()`: en lugar de elegir nuevos nombres de columna, debemos proporcionar las columnas existentes que definen los valores (`values_from`) y el nombre de la columna (`names_from`):
+`pivot_wider()` tiene la interfaz opuesta a `pivot_longer()`: en lugar de elegir nuevos nombres de columna, debemos proporcionar las columnas existentes que definen los valores (`values_from`) y el nombre de la columna (`names_from`):
 
 ```{r}
 cms_patient_experience |> 

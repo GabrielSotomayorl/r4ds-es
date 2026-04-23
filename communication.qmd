@@ -27,7 +27,7 @@ No enseña la mecánica de crear visualizaciones, sino que se enfoca en lo que n
 ### Requisitos previos
 
 En este capítulo, nos centraremos una vez más en ggplot2.
-También usaremos un poco de dplyr para la manipulación de datos, **scales** para anular las rupturas, etiquetas, transformaciones y paletas predeterminadas, y algunos paquetes de extensión de ggplot2, incluido **ggrepel** ([https://ggrepel. slowkow.com](https://ggrepel.slowkow.com/)) de Kamil Slowikowski y **patchwork** ([https://patchwork.data-imaginist.com](https://patchwork.data-imaginist%20.com/)) por Thomas Lin Pedersen.
+También usaremos un poco de dplyr para la manipulación de datos, **scales** para anular las rupturas, etiquetas, transformaciones y paletas predeterminadas, y algunos paquetes de extensión de ggplot2, incluido **ggrepel** ([https://ggrepel.slowkow.com](https://ggrepel.slowkow.com/)) de Kamil Slowikowski y **patchwork** ([https://patchwork.data-imaginist.com](https://patchwork.data-imaginist.com/)) por Thomas Lin Pedersen.
 No olvides que necesitarás instalar esos paquetes con `install.packages()` si aún no los tienes.
 
 ```{r}
@@ -230,7 +230,7 @@ Un par de ideas:
 
 -   Usa `geom_rect()` para dibujar un rectángulo alrededor de los puntos de interés.
     Los límites del rectángulo están definidos por la estética `xmin`, `xmax`, `ymin`, `ymax`.
-    Alternativamente, consulte el [paquete ggforce](https://ggforce.data-imaginist.com/index.html), específicamente [`geom_mark_hull()`](https://ggforce.data-imaginist.com/reference/%20geom_mark_hull.html), que le permite anotar subconjuntos de puntos con cascos.
+    Alternativamente, consulte el [paquete ggforce](https://ggforce.data-imaginist.com/index.html), específicamente [`geom_mark_hull()`](https://ggforce.data-imaginist.com/reference/geom_mark_hull.html), que le permite anotar subconjuntos de puntos con cascos.
 
 -   Usa `geom_segment()` con el argumento `arrow` para llamar la atención sobre un punto con una flecha.
     Use la estética `x` e `y` para definir la ubicación inicial, y `xend` y `yend` para definir la ubicación final.

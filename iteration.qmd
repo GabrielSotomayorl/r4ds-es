@@ -432,7 +432,7 @@ Si es necesario, puede `pivot_wider()` para devolverlo a la forma original.
 
 En la sección anterior, aprendiste a usar `dplyr::across()` para repetir una transformación en varias columnas.
 En esta sección, aprenderá cómo usar `purrr::map()` para hacer algo con cada archivo en un directorio.
-Empecemos con un poco de motivación: imagine que tiene un directorio lleno de hojas de cálculo de Excel\[\^iteración-4\] que desea leer.
+Empecemos con un poco de motivación: imagine que tiene un directorio lleno de hojas de cálculo de Excel[^iteration-4] que desea leer.
 Podrías hacerlo con copiar y pegar:
 
 ```{r}

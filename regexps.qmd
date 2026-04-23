@@ -393,7 +393,7 @@ Como discutimos anteriormente, puede construir sus propios conjuntos con `[]`, d
 Además de `^`, hay otros dos caracteres que tienen un significado especial dentro de `[]:`
 
 -   `-` define un rango, p.ej., `[a-z]` coincide con cualquier letra minúscula y `[0-9]` coincide con cualquier número.
--   `\` eescapa a los caracteres especiales, por lo que `[\^\-\]]` coincide `^`, `-`, o `]`.
+-   `\` escapa a los caracteres especiales, por lo que `[\^\-\]]` coincide `^`, `-`, o `]`.
 
 Aquí hay algunos ejemplos:
 
@@ -846,7 +846,7 @@ head(list.files(pattern = "\\.Rmd$"))
 ```
 
 Vale la pena señalar que el lenguaje de patrones usado por base R es ligeramente diferente al usado por stringr.
-Esto se debe a que stringr está construido sobre el [paquete stringi](https://stringi.gagolewski.com), que a su vez está construido sobre el [motor ICU](https://unicode-org.github.io%20/icu/userguide/strings/regexp.html), mientras que las funciones básicas de R usan el [motor TRE](https://github.com/laurikari/tre) o el [motor PCRE](https://www.pcre%20.org), dependiendo de si ha establecido o no `perl = TRUE`.
+Esto se debe a que stringr está construido sobre el [paquete stringi](https://stringi.gagolewski.com), que a su vez está construido sobre el [motor ICU](https://unicode-org.github.io/icu/userguide/strings/regexp.html), mientras que las funciones básicas de R usan el [motor TRE](https://github.com/laurikari/tre) o el [motor PCRE](https://www.pcre.org), dependiendo de si ha establecido o no `perl = TRUE`.
 Afortunadamente, los conceptos básicos de las expresiones regulares están tan bien establecidos que encontrará pocas variaciones cuando trabaje con los patrones que aprenderá en este libro.
 Solo debe ser consciente de la diferencia cuando comience a confiar en funciones avanzadas como rangos de caracteres Unicode complejos o funciones especiales que usan la sintaxis `(?…)`.
 

@@ -112,7 +112,7 @@ HTML significa **H**yper**T**ext **M**arkup **L**idioma y se parece a esto:
 </body>
 ```
 
-HTML tiene una estructura jerárquica formada por **elementos** que consisten en una etiqueta de inicio (por ejemplo, `<etiqueta>`), **atributos** opcionales (`id='primero'`), una etiqueta final\[\^webscraping- 5\] (como `</etiqueta>`) y **contenido** (todo lo que se encuentra entre la etiqueta de inicio y final).
+HTML tiene una estructura jerárquica formada por **elementos** que consisten en una etiqueta de inicio (por ejemplo, `<etiqueta>`), **atributos** opcionales (`id='primero'`), una etiqueta final[^webscraping-5] (como `</etiqueta>`) y **contenido** (todo lo que se encuentra entre la etiqueta de inicio y final).
 
 Dado que `<` y `>` se utilizan para las etiquetas de inicio y finalización, no puede escribirlas directamente.
 En su lugar, debe utilizar los **escapes** de HTML `&gt;` (mayor que) y `&lt;` (menor que).
