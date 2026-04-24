@@ -1,4 +1,4 @@
-# Valores faltanres {#sec-missing-values}
+# Valores faltantes {#sec-missing-values}
 
 ```{r}
 #| echo: false
@@ -275,7 +275,9 @@ length(x2)
 
 Todas las funciones de resumen funcionan con vectores de longitud cero, pero pueden devolver resultados sorprendentes a primera vista.
 Aquí vemos que `mean(age)` devuelve `NaN` porque `mean(age)` = `sum(age)/length(age)` que aquí es 0/0.
-`max()` y `min()` devuelven -Inf e Inf para vectores vacíos, por lo que si combina los resultados con un vector no vacío de nuevos datos y vuelve a calcular, obtendrá el mínimo o el máximo de los nuevos datos\[\^ valores perdidos-1\].
+`max()` y `min()` devuelven -Inf e Inf para vectores vacíos, por lo que si combina los resultados con un vector no vacío de nuevos datos y vuelve a calcular, obtendrá el mínimo o el máximo de los nuevos datos[^missing-values-1].
+
+[^missing-values-1]: En otras palabras, `min(c(x, y))` siempre es igual a `min(min(x), min(y))`.
 
 A veces, un enfoque más simple es realizar el resumen y luego hacer explícitas las faltas implícitas con `complete()`.
 

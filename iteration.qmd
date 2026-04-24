@@ -172,10 +172,12 @@ df_miss |>
   )
 ```
 
-Esto es un poco detallado, por lo que R viene con un atajo útil: para este tipo de función desechable, o **anónima**[^iteration-1], puede reemplazar `función` con `\`\[\^iteration-2 \]:
+Esto es un poco detallado, por lo que R viene con un atajo útil: para este tipo de función desechable, o **anónima**[^iteration-1], puede reemplazar `función` con `\(x)`[^iteration-2]:
 
 [^iteration-1]: Anónimo, porque nunca le dimos explícitamente un nombre con `<-`.
     Otro término que usan los programadores para esto es "función lambda".
+
+[^iteration-2]: En código más antiguo es posible que veas una sintaxis como `~ .x + 1`. Es otra forma de escribir funciones anónimas, pero solo funciona dentro de las funciones de tidyverse y siempre usa el nombre de variable `.x`. Ahora recomendamos la sintaxis base, `\(x) x + 1`.
 
 ```{r}
 #| results: false
@@ -223,9 +225,9 @@ Como aprenderá en la siguiente sección, puede usar el argumento `.names` para 
 ### Nombres de columna
 
 El resultado de `across()` se nombra de acuerdo con la especificación provista en el argumento `.names`.
-Podríamos especificar el nuestro si quisiéramos que el nombre de la función fuera primero [^iteration-2]:
+Podríamos especificar el nuestro si quisiéramos que el nombre de la función fuera primero [^iteration-3]:
 
-[^iteration-2]: actualmente no puede cambiar el orden de las columnas, pero podría reordenarlas después usando `relocate()` o similar.
+[^iteration-3]: actualmente no puede cambiar el orden de las columnas, pero podría reordenarlas después usando `relocate()` o similar.
 
 ```{r}
 df_miss |> 
@@ -374,9 +376,9 @@ df_paired <- tibble(
 )
 ```
 
-Actualmente no hay forma de hacer esto con `across()`[^iteration-3], pero es relativamente sencillo con `pivot_longer()`:
+Actualmente no hay forma de hacer esto con `across()`[^iteration-4], pero es relativamente sencillo con `pivot_longer()`:
 
-[^iteration-3]: Tal vez habrá un día, pero actualmente no vemos cómo.
+[^iteration-4]: Tal vez habrá un día, pero actualmente no vemos cómo.
 
 ```{r}
 df_long <- df_paired |> 
@@ -432,7 +434,10 @@ Si es necesario, puede `pivot_wider()` para devolverlo a la forma original.
 
 En la sección anterior, aprendiste a usar `dplyr::across()` para repetir una transformación en varias columnas.
 En esta sección, aprenderá cómo usar `purrr::map()` para hacer algo con cada archivo en un directorio.
-Empecemos con un poco de motivación: imagine que tiene un directorio lleno de hojas de cálculo de Excel[^iteration-4] que desea leer.
+Empecemos con un poco de motivación: imagine que tiene un directorio lleno de hojas de cálculo de Excel[^iteration-5] que desea leer.
+
+[^iteration-5]: Si en cambio tuvieras un directorio de archivos csv con el mismo formato, puedes usar la técnica de la @sec-readr-multiple.
+
 Podrías hacerlo con copiar y pegar:
 
 ```{r}
@@ -732,9 +737,9 @@ files <- paths |>
 ```
 
 Luego, una estrategia muy útil es capturar la estructura de los data frames para que pueda explorarla usando sus habilidades de ciencia de datos.
-Una forma de hacerlo es con esta útil función `df_types` [^iteration-4] que devuelve un tibble con una fila para cada columna:
+Una forma de hacerlo es con esta útil función `df_types` [^iteration-6] que devuelve un tibble con una fila para cada columna:
 
-[^iteration-4]: no vamos a explicar cómo funciona, pero si miras los documentos de las funciones utilizadas, deberías poder descifrarlo.
+[^iteration-6]: no vamos a explicar cómo funciona, pero si miras los documentos de las funciones utilizadas, deberías poder descifrarlo.
 
 ```{r}
 df_types <- function(df) {
@@ -958,7 +963,7 @@ carat_histogram <- function(df) {
 carat_histogram(by_clarity$data[[1]])
 ```
 
-Ahora podemos usar `map()` para crear una lista de muchos gráficos\[\^iterationn-6\] y sus posibles rutas de archivo:
+Ahora podemos usar `map()` para crear una lista de muchos gráficos[^iteration-7] y sus posibles rutas de archivo:
 
 ```{r}
 by_clarity <- by_clarity |> 
@@ -967,6 +972,8 @@ by_clarity <- by_clarity |>
     path = str_glue("clarity-{clarity}.png")
   )
 ```
+
+[^iteration-7]: Puedes imprimir `by_clarity$plot` para obtener una animación rudimentaria: verás un gráfico por cada elemento de `plots`. NOTA: esto no ocurrió en el caso de los autores.
 
 Luego usa `walk2()` con `ggsave()` para guardar cada gráfico:
 
