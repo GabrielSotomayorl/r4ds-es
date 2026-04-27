@@ -124,7 +124,7 @@ ggplot(table1, aes(x = year, y = cases)) +
 
 1.  Para cada una de las tablas de muestra, describa lo que representa cada observación y cada columna.
 
-2.  Haz un bosquejo del proceso que usarías para calcular la `rate` desde `table2`.
+2.  Haz un bosquejo del proceso que usarías para calcular la `rate` desde `table2` y `table3`.
     Deberá realizar cuatro operaciones:
 
     a.  Extraiga el número de casos de TB por país por año.
@@ -337,7 +337,7 @@ knitr::include_graphics("diagrams/tidy-data/cell-values.png", dpi = 270)
 ### Muchas variables en los nombres de las columnas
 
 Una situación más desafiante ocurre cuando tiene múltiples piezas de información abarrotadas en los nombres de las columnas y desea almacenarlas en nuevas variables separadas.
-Por ejemplo, tome el conjunto de datos `who2`, la fuente de `table_1` y amigos que vió con anterioridad:
+Por ejemplo, tome el conjunto de datos `who2`, la fuente de `table1` y amigos que vió con anterioridad:
 
 ```{r}
 who2
@@ -585,8 +585,7 @@ Esto es en parte un reflejo de nuestra definición de datos ordenados, donde dij
 Está totalmente bien ser pragmático y decir que una variable es lo que hace que su análisis sea más fácil.
 Entonces, si no sabe cómo hacer algunos cálculos, considere cambiar la organización de sus datos; ¡no tenga miedo de desordenar, transformar y volver a ordenar según sea necesario!
 
-Si disfrutó de este capítulo y desea obtener más información sobre la teoría subyacente, puede obtener más información sobre la historia y los fundamentos teóricos en el artículo [Tidy Data](https://www.jstatsoft.org/article/view/v059i10) publicado.
-en el Journal of Statistical Software.
+Si disfrutó de este capítulo y desea obtener más información sobre la teoría subyacente, puede obtener más información sobre la historia y los fundamentos teóricos en el artículo [Tidy Data](https://www.jstatsoft.org/article/view/v059i10) publicado en el Journal of Statistical Software.
 
 Ahora que está escribiendo una cantidad sustancial de código R, es hora de aprender más sobre cómo organizar su código en archivos y directorios.
 En el próximo capítulo, aprenderá todo acerca de las ventajas de los scripts y proyectos, y algunas de las muchas herramientas que brindan para facilitarle la vida.

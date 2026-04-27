@@ -104,7 +104,7 @@ En tidyverse, usamos data frames especiales llamados **tibbles** sobre los que a
 penguins
 ```
 
-Este data frame contiene columnas `r ncol (penguins)`.
+Este data frame contiene `r ncol(penguins)` columnas.
 Para una vista alternativa, donde puede ver todas las variables y las primeras observaciones de cada variable, use `glimpse()`.
 O, si está en RStudio, ejecute `View(penguins)` para abrir un visor de datos interactivo.
 
@@ -157,7 +157,8 @@ ggplot(penguins, aes(x = flipper_length_mm, y = body_mass_g)) +
 Recreemos esta gráfica paso a paso.
 
 Con ggplot2, comienza una gráfica con la función `ggplot()`, definiendo un objeto de gráfica al que luego agrega **capas**.
-El primer argumento de `ggplot()` es el conjunto de datos que se usará en el gráfico, por lo que `ggplot(data = penguins)` crea un gráfico vacío que está preparado para mostrar los datos de `penguins`, pero como no lo hemos dicho cómo visualizarlo todavía, por ahora está vacío.
+El primer argumento de `ggplot()` es el conjunto de datos que se usará en el gráfico, por lo que `ggplot(data = penguins)` crea un gráfico vacío que está preparado para mostrar los datos de `penguins`, pero como no le hemos dicho cómo visualizarlo todavía, por ahora está vacío.
+No es un gráfico muy emocionante, pero puedes pensarlo como un lienzo vacío sobre el que pintarás las capas restantes de tu gráfico.
 
 ```{r}
 #| fig-alt: >

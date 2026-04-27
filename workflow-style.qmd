@@ -172,7 +172,7 @@ flights|>
              n = n()
            )
 
-# Avoid
+# Ejemplo de como no debe ser:
 flights|>
   group_by(tailnum) |> 
   summarize(
@@ -203,7 +203,7 @@ Trate de dividirlas en subtareas más pequeñas, dando a cada tarea un nombre in
 Los nombres ayudarán al lector a comprender lo que está sucediendo y facilitarán la verificación de que los resultados intermedios son los esperados.
 Siempre que pueda dar a algo un nombre informativo, debe darle un nombre informativo, por ejemplo, cuando cambia fundamentalmente la estructura de los datos, por ejemplo, después de pivotar o resumir.
 ¡No esperes hacerlo bien la primera vez!
-Esto significa romper canalizacionesías largas si hay estados intermedios que pueden obtener buenos nombres.
+Esto significa romper canalizaciones largas si hay estados intermedios que pueden obtener buenos nombres.
 
 ## ggplot2
 

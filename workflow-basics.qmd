@@ -59,7 +59,7 @@ Al leer ese código, diga "el nombre del objeto obtiene valor" en su cabeza.
 Hará muchas asignaciones, y `<-` es una molestia escribir.
 Puede ahorrar tiempo con el método abreviado de teclado de RStudio: Alt + - (el signo menos).
 Tenga en cuenta que RStudio rodea automáticamente `<-` con espacios, lo cual es una buena práctica de formateo de código.
-El código puede ser para leer en un buen día, así que tómese un respiro y use espacios.
+El código puede ser miserable para leer incluso en un buen día, así que dale un descanso a tus ojos y usa espacios.
 
 ## Comentarios
 
