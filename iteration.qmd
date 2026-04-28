@@ -436,7 +436,7 @@ En la sección anterior, aprendiste a usar `dplyr::across()` para repetir una tr
 En esta sección, aprenderá cómo usar `purrr::map()` para hacer algo con cada archivo en un directorio.
 Empecemos con un poco de motivación: imagine que tiene un directorio lleno de hojas de cálculo de Excel[^iteration-5] que desea leer.
 
-[^iteration-5]: Si en cambio tuvieras un directorio de archivos csv con el mismo formato, puedes usar la técnica de la @sec-readr-multiple.
+[^iteration-5]: Si en cambio tuvieras un directorio de archivos csv con el mismo formato, puedes usar la técnica de la @sec-readr-directory.
 
 Podrías hacerlo con copiar y pegar:
 

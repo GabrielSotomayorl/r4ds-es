@@ -185,7 +185,8 @@ flights |>
 1.  En una canalización única para cada condición, busque todos los vuelos que cumplan la condición:
 
     -   Tuvo un retraso de llegada de dos o más horas.
-    -   Voló a Houston (`IAH` o `HOU`) C. Fueron operados por United, American o Delta
+    -   Voló a Houston (`IAH` o `HOU`)
+    -   Fueron operados por United, American o Delta
     -   Salida en verano (julio, agosto y septiembre)
     -   Llegó más de dos horas tarde, pero no se fue tarde
     -   Se retrasaron al menos una hora, pero recuperaron más de 30 minutos en vuelo
@@ -366,7 +367,7 @@ ggplot(flights, aes(x = dep_sched %% 60)) + geom_histogram(binwidth = 1)
 ggplot(flights, aes(x = air_time - airtime2)) + geom_histogram()
 ```
 
-1.  Compare `dep_time`, `sched_dep_time`, and `dep_delay`.
+1.  Compare `dep_time`, `sched_dep_time` y `dep_delay`. ¿Cómo esperarías que se relacionen esos tres números?
 
 2.  Haga una lluvia de ideas sobre tantas formas como sea posible para seleccionar `dep_time`, `dep_delay`, `arr_time` y `arr_delay` de `flights`.
 
@@ -446,8 +447,6 @@ arrange(flights3, desc(speed))
 Si bien ambas formas tienen su tiempo y lugar, la canalización generalmente produce un código de análisis de datos que es más fácil de escribir y leer.
 
 Para agregar la canalización a su código, recomendamos usar el atajo de teclado incorporado Ctrl/Cmd + Shift + M. Deberá realizar un cambio en sus opciones de RStudio para usar `|>` en lugar de `%>%` como se muestra en @fig-pipe-options; más sobre `%>%` en breve.
-
-485
 
 ```{r}
 #| label: fig-pipe-options
@@ -550,7 +549,7 @@ flights |>
   relocate(dest)
 ```
 
-Tenga en cuenta que hay 105 destinos, pero aquí tenemos 108 filas. ¿Qué pasa? `slice_min()` y `slice_max()` mantienen valores empatados por lo que `n = 1` significa darme todas las filas con el valor más alto. Si desea exactamente una fila por grupo, puede configurar `whit_ties = FALSE`.
+Tenga en cuenta que hay 105 destinos, pero aquí tenemos 108 filas. ¿Qué pasa? `slice_min()` y `slice_max()` mantienen valores empatados por lo que `n = 1` significa darme todas las filas con el valor más alto. Si desea exactamente una fila por grupo, puede configurar `with_ties = FALSE`.
 
 Esto es similar a calcular el retraso máximo con `summarize()`, pero obtienes la fila correspondiente completa (o filas si hay un empate) en lugar de la estadística de resumen única.
 
@@ -637,7 +636,7 @@ flights |>
 
 `.by` funciona con todos los verbos y tiene la ventaja de que no necesita usar el argumento `.groups` para suprimir el mensaje de agrupación o `ungroup()` cuando haya terminado.
 
-No nos enfocamos en esta sintaxis en este capítulo porque era muy nueva cuando se escribió el libro. Queríamos mencionarlo porque creemos que es muy prometedor y es probable que sea bastante popular. Puede obtener más información al respecto en la \[publicación de blog de dplyr 1.1.0\] (https://www.tidyverse.org/blog/2023/02/dplyr-1-1-0-per-operation-grouping/).
+No nos enfocamos en esta sintaxis en este capítulo porque era muy nueva cuando se escribió el libro. Queríamos mencionarlo porque creemos que es muy prometedor y es probable que sea bastante popular. Puede obtener más información al respecto en la [publicación de blog de dplyr 1.1.0](https://www.tidyverse.org/blog/2023/02/dplyr-1-1-0-per-operation-grouping/).
 
 ### Ejercicios
 
